@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#lightbox{
+			height: 0px;
+			width: 0px;
+			position:fixed;
+			background-color: lightblue;
+			top:0;
+			left:0;
+			overflow:hidden;
+			transition: all 4s; 
+			
+		}
+
+		#lightbox:target{
+			height: 30%;
+			width: 30%;
+			top:30%;
+			left: 30%;
+		}
+
+		#classbox
+		{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<a href="#lightbox">
+		LightBox
+	</a>
+
+	<div id = "lightbox">
+		<a href="#">
+			X
+		</a>
+		<p>
+			This is sample text.
+		</p>
+	</div>
+</body>
+</html>
